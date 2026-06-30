@@ -1,5 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+<category>
+        <pattern>START</pattern>
+        <template>
+            Welcome to the Computing Career Advisor! Let's find your ideal role. 
+            Do you prefer building things or organizing/investigating?
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>START</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>START</srai></template>
+    </category>
+
+
+    <category>
+        <pattern>BUILDING THINGS</pattern>
+        <that>DO YOU PREFER BUILDING THINGS OR ORGANIZING INVESTIGATING</that>
+        <template>
+            Great! Would you prefer working on engines (under-the-hood logic) or a car's cosmetics (visuals)?
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>ENGINES</pattern>
+        <that>WOULD YOU PREFER WORKING ON ENGINES OR A CARS COSMETICS</that>
+        <template>
+            You belong in backend development! I recommend pursuing a career as a **Software Engineer**. You'll love writing core logic, algorithms, and building applications.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>COSMETICS</pattern>
+        <that>WOULD YOU PREFER WORKING ON ENGINES OR A CARS COSMETICS</that>
+        <template>
+            You have a creative eye! I recommend pursuing a career as a **UX/UI Designer**, where you can design intuitive, beautiful, and user-friendly interfaces.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>ORGANIZING INVESTIGATING</pattern>
+        <that>DO YOU PREFER BUILDING THINGS OR ORGANIZING INVESTIGATING</that>
+        <template>
+            Got it. Which would interest you most: a math equation, a crime scene investigation, or a sorting puzzle?
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>A MATH EQUATION</pattern>
+        <that>WHICH WOULD INTEREST YOU MOST A MATH EQUATION A CRIME SCENE INVESTIGATION OR A SORTING PUZZLE</that>
+        <template>
+            You love finding patterns in information! I recommend looking into becoming a **Data Analyst/Scientist**, turning raw numbers into strategic insights.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>A CRIME SCENE INVESTIGATION</pattern>
+        <that>WHICH WOULD INTEREST YOU MOST A MATH EQUATION A CRIME SCENE INVESTIGATION OR A SORTING PUZZLE</that>
+        <template>
+            You like protecting assets and solving mysteries! I recommend a career as a **Cybersecurity Analyst**, where you can defend networks and hunt vulnerabilities.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>A SORTING PUZZLE</pattern>
+        <that>WHICH WOULD INTEREST YOU MOST A MATH EQUATION A CRIME SCENE INVESTIGATION OR A SORTING PUZZLE</that>
+        <template>
+            You appreciate structured, pristine data architectures! I recommend pursuing a career as a **Database Administrator**, keeping data organized, secure, and accessible.
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I didn't quite catch that. Please answer using the options provided so I can guide you to the right career path! Type "START" to begin again.
+        </template>
+    </category>
+
   <category>
     <pattern>*</pattern>
     <template>I have no answer for that.</template>
